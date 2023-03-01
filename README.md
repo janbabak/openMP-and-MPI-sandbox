@@ -21,7 +21,12 @@ docker build -t openmpsandbox .
 docker run -it -v `pwd`:/work openmpsandbox
 ```
 
-## VS code setup (optional)
+## Run main.cpp in terminal
+```bash
+make run
+```
+
+## Run main.cpp in VS code
 
 -   Install extension [Dev containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
