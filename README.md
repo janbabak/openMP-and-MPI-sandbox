@@ -1,6 +1,13 @@
-# Open MP sandbox
+# Open MP and MPI sandbox
 
-Sandbox for running C, C++ project with openMP dependency in docker.
+[![Open MP](https://img.shields.io/badge/open-MP-pgreen.svg)](https://www.open.mp)
+[![Open MPI](https://img.shields.io/badge/open-MPI-pgreen.svg)](https://www.open-mpi.org)
+[![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)](https://en.cppreference.com/w/c/language)
+[![VScode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED.svg?style=flat&logo=Docker&logoColor=white)](https://www.docker.com)
+
+- Sandbox for running C++ project with openMP or MPI dependency in docker.
+- **openMP and openMPI are in different branches!**
 
 ## Get repository
 
