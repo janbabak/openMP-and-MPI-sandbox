@@ -1,7 +1,7 @@
 TARGET = myProgram
 
-CXX = g++
-CXX_FLAGS = -Wall -pedantic -Wextra -std=c++20 -fopenmp
+MPIC = mpic++
+MPIC_FLAGS = -Wall -pedantic -std=c++20
 
 MKDIR = mkdir -p
 BUILD_DIR = build
@@ -17,11 +17,11 @@ run: $(TARGET)
 	./$(TARGET)
 
 $(TARGET): $(BUILD_DIR)/main.o
-	$(CXX) $(CXX_FLAGS) $^ -o $@ -g
+	$(MPIC) $(MPIC_FLAGS) $^ -o $@
 
 $(BUILD_DIR)/%.o: src/%.cpp
 	$(MKDIR) $(BUILD_DIR)
-	$(CXX) $(CXX_FLAGS) $< -c -o $@ -g
+	$(MPIC) $(MPIC_FLAGS) $< -c -o $@ -g
 
 .PHONY: clean
 clean:
