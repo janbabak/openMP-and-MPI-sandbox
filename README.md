@@ -1,6 +1,6 @@
 # Open MP and MPI sandbox
 
-[![Open MP](https://img.shields.io/badge/open-MP-pgreen.svg)](https://www.open.mp)
+[![Open MP](https://img.shields.io/badge/open-MP-pgreen.svg)](https://www.openmp.org)
 [![Open MPI](https://img.shields.io/badge/open-MPI-pgreen.svg)](https://www.open-mpi.org)
 [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)](https://en.cppreference.com/w/c/language)
 [![VScode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com)
