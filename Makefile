@@ -14,7 +14,7 @@ compile: $(TARGET)
 
 .PHONY: run
 run: $(TARGET)
-	./$(TARGET)
+	mpirun -np 4 --allow-run-as-root ./$(TARGET)
 
 $(TARGET): $(BUILD_DIR)/main.o
 	$(MPIC) $(MPIC_FLAGS) $^ -o $@
