@@ -1,4 +1,5 @@
 #include <mpi.h>
+#include <omp.h>
 #include <iostream>
 
 int main(int argc, char** argv) {
@@ -21,6 +22,22 @@ int main(int argc, char** argv) {
     // Print off a hello world message
     printf("Hello world from processor %s, rank %d out of %d processors\n", processor_name,
            world_rank, world_size);
+
+    int nthreads, tid;
+    omp_set_num_threads(3);
+
+    //openMP thread parallel code
+#pragma omp parallel private(nthreads, tid)
+    {
+        tid = omp_get_thread_num();
+        printf("Welcome from thread = %d of process %d\n", tid, world_rank);
+
+        // Only master thread does this
+        if (tid == 0) {
+            nthreads = omp_get_num_threads();
+            printf("Number of threads = %d on process %d\n", nthreads, world_rank);
+        }
+    }
 
     // Finalize the MPI environment.
     MPI_Finalize();

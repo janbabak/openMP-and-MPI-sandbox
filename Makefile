@@ -1,7 +1,7 @@
 TARGET = myProgram
 
 MPIC = mpic++
-MPIC_FLAGS = -Wall -pedantic -std=c++20
+MPIC_FLAGS = -Wall -pedantic -std=c++20 -fopenmp
 
 MKDIR = mkdir -p
 BUILD_DIR = build
